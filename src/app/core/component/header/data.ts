@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import icon from "../../asset/icon";
+import icon from "../../assets/icon";
 
 export const contactDetails: {
   text: string;

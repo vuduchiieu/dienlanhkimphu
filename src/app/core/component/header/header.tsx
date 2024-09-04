@@ -13,7 +13,12 @@ function Header() {
         <div className={cx("container")}>
           {contactDetails.map(({ text, icon, classname }, i) => (
             <div key={i} className={cx("text-icon")}>
-              <Image width={20} height={20} src={icon} alt={text} />
+              <Image
+                width={classname ? 26 : 20}
+                height={classname ? 26 : 20}
+                src={icon}
+                alt={text}
+              />
               <h4 className={cx(classname)}>{text}</h4>
             </div>
           ))}
@@ -25,13 +30,13 @@ function Header() {
         </div>
       </div>
       <div className={cx("header-bot")}>
-        <ul className={cx("menu")}>
-          {listMenu.map((item, i) => (
+        <div className={cx("menu")}>
+          {listMenu.map((text, i) => (
             <Link href={"/"} key={i} className={cx("menu-item")}>
-              <h3>{item}</h3>
+              <h3>{text}</h3>
             </Link>
           ))}
-        </ul>
+        </div>
       </div>
     </header>
   );

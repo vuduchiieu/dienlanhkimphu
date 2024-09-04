@@ -3,7 +3,7 @@
   .header-top {
     display: flex;
     justify-content: center;
-    background-color: #faa919;
+    background-color: var(--color-primary);
     .container {
       display: flex;
       justify-content: space-between;
@@ -14,9 +14,10 @@
         display: flex;
         align-items: center;
         h4 {
-          margin-left: 6px;
+          margin: 0 0 2px 6px;
           color: #fff;
           font-size: 15px;
+          cursor: default;
         }
         .phone {
           font: 600 24px / 24px "Utm-Avobold", sans-serif;
@@ -55,7 +56,7 @@
         &:hover {
           cursor: pointer;
           h3 {
-            color: #faa919;
+            color: var(--color-primary);
           }
         }
       }
