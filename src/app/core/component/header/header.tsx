@@ -14,7 +14,7 @@ function Header() {
           {contactDetails.map(({ text, icon, classname }, i) => (
             <div key={i} className={cx("text-icon")}>
               <Image width={20} height={20} src={icon} alt={text} />
-              <p className={cx(classname)}>{text}</p>
+              <h4 className={cx(classname)}>{text}</h4>
             </div>
           ))}
           <div className={cx("social")}>
@@ -28,7 +28,7 @@ function Header() {
         <ul className={cx("menu")}>
           {listMenu.map((item, i) => (
             <Link href={"/"} key={i} className={cx("menu-item")}>
-              <p>{item}</p>
+              <h3>{item}</h3>
             </Link>
           ))}
         </ul>
