@@ -4,9 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { contactDetails, iconSocial, listMenu } from "./data";
 
-const cx = classNames.bind(styles);
-
 function Header() {
+  const cx = classNames.bind(styles);
   return (
     <header className={cx("header")}>
       <div className={cx("header-top")}>

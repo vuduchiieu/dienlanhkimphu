@@ -6,6 +6,9 @@ import phone from "./phone.svg";
 import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 import skype from "./skype.svg";
+import dot from "./dot.svg";
+import arrowLeft from "./left-arrow.svg";
+import arrowRight from "./right-arrow.svg";
 
 interface iconType {
   location: StaticImageData;
@@ -14,6 +17,9 @@ interface iconType {
   facebook: StaticImageData;
   twitter: StaticImageData;
   skype: StaticImageData;
+  dot: StaticImageData;
+  arrowLeft: StaticImageData;
+  arrowRight: StaticImageData;
 }
 const icon: iconType = {
   location,
@@ -22,6 +28,9 @@ const icon: iconType = {
   facebook,
   twitter,
   skype,
+  dot,
+  arrowLeft,
+  arrowRight,
 };
 
 export default icon;
